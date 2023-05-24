@@ -68,14 +68,16 @@ public class CalculatorTest {
 	}
 	@Test
 	public void testdivide() {
-		int a = 4321;
-		int b = 1234;
+		
+		int a = 0;
+		int b = 0;
 			
 		Calculator cal = new Calculator();
 		int actual = cal.divide(a, b); 
 			 
-		int expected = 5555;
-		assertEquals (expected, actual);
+		int expected = 2;
+		assertEquals ("fail(\"Denominator is 0\");",expected, actual);
+		//fail("Denominator is 0");
 
 	}
 	@After

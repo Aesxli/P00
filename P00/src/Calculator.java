@@ -12,7 +12,10 @@ public int multiply(int a,int b) {
 public int divide(int a, int b) {
 	if(b==0) {
 		throw new IllegalArgumentException();
-	}
+	}if(a==0 && b==0) {
+		return-1;
+	}else {
 	return a/b;
+	}
 }
 }
